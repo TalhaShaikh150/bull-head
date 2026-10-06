@@ -311,23 +311,47 @@ h1, h2, h3, .serif {
         box-shadow: 0 8px 20px rgba(0,0,0,0.3) !important;
     }
 
-    .header-dark {
-        min-height: 100vh !important; /* Force to take up entire screen */
+    .home-header {
+        min-height: 100vh !important; /* Force to take up entire screen only on home page */
         padding-bottom: 0 !important;
     }
 
-    .marquee-container {
-        display: flex;
-        position: fixed; /* Locks it perfectly to the screen bottom */
-        bottom: 0;
-        left: 0;
+    .review-container-mobile {
+        padding: 0 !important; 
+        margin: 0 !important;
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+
+    .mobile-no-pad {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+
+    .review-feature {
+        padding: 2rem 15px !important; /* Exactly 15px off the screen edge */
+        border-radius: 0 !important; 
+        width: 100% !important;
+        box-sizing: border-box !important;
+    }
+
+    .review-body {
+        font-size: 1rem; /* Shrinking the text slightly fits far more words per line, maximizing perceived width */
+        line-height: 1.6;
+    }
+
+    .review-author {
+        font-size: 1.4rem; /* Scaled down slightly so it fits wider across the screen without ugly wrapping */
         width: 100%;
-        z-index: 1000;
-        margin-top: 0;
+    }
+
+    .marquee-container {
+        display: flex; 
+        position: absolute;
     }
 
     body {
-        padding-bottom: 3rem; /* Prevent content from being hidden behind fixed marquee */
+        padding-bottom: 0;
     }
 
     .hero-center-group {
@@ -337,9 +361,10 @@ h1, h2, h3, .serif {
     }
 
     .book-hero {
-        height: 40vh; /* Take up huge vertical space */
+        height: 28vh; /* Reduced from 40vh to ensure all elements fit above the fold */
         width: auto;
         max-width: 90vw;
+        margin-bottom: -0.5rem; /* Tighter spacing */
     }
 
     .text-columns {
