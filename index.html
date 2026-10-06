@@ -11,7 +11,7 @@
 
 <body>
     <!-- Top Dark Section -->
-    <header class="header-dark">
+    <header class="header-dark" style="min-height: 55vh; display: flex; flex-direction: column;">
         <!-- Background typography -->
         <div class="bg-typography">
             <p>PERSONAL ACCOUNTABILITY. SUCCESS. STORIES & LESSONS. STAGE OF LIFE.</p>
@@ -33,8 +33,15 @@
             </button>
         </nav>
 
-        <div style="width: 100%; text-align: center; position: relative; z-index: 10; margin-top: 1rem; margin-bottom: 1rem;">
+        <div class="desktop-only-hero" style="flex: 1; display: flex; align-items: center; justify-content: center; width: 100%; text-align: center; position: relative; z-index: 10; padding: 2rem 5%;">
             <h1 class="serif massive-title" style="color: var(--cream);">Stories and lessons for any stage of life.</h1>
+        </div>
+
+        <!-- MOBILE ONLY HERO (Book -> Button -> Title) -->
+        <div class="mobile-only-hero" style="display: none; flex-direction: column; align-items: center; justify-content: center; width: 100%; text-align: center; position: relative; z-index: 10; padding: 2rem 5%; gap: 1.5rem;">
+            <img src="assets/hero-book.png" alt="Bullheaded for Success" class="book-hero">
+            <a href="#buy" class="btn-cream order-hero-btn">ORDER NOW</a>
+            <h1 class="serif massive-title" style="color: var(--cream); margin-top: 0.5rem;">Stories and lessons for any stage of life.</h1>
         </div>
 
         <!-- Marquee Line at the border -->
@@ -50,7 +57,7 @@
 
     <!-- Light Cream Section -->
     <section class="section-cream" id="book">
-        <div class="hero-center-group">
+        <div class="hero-center-group desktop-only-hero">
             <img src="assets/hero-book.png" alt="Bullheaded for Success" class="book-hero">
             <a href="#buy" class="btn-dark order-hero-btn">ORDER NOW</a>
         </div>
@@ -108,6 +115,14 @@
             <a href="#" class="retailer-link">Ebay</a>
         </div>
     </section>
+
+    <!-- Footer -->
+    <footer style="background-color: var(--dark-burgundy);">
+        <div class="container" style="text-align: center; padding: 3rem 5%; color: #ffffff;">
+            <p style="letter-spacing: 2px; text-transform: uppercase; font-size: 0.8rem;">&copy; 2026 Dale C. Strobach. All rights reserved.</p>
+            <p style="letter-spacing: 2px; text-transform: uppercase; font-size: 0.7rem; color: rgba(255,255,255,0.6); margin-top: 1rem;">Powered by AK Enterprises</p>
+        </div>
+    </footer>
 
     <!-- Full Screen Mobile Menu -->
     <div class="mobile-nav-overlay">
