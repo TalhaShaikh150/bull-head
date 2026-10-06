@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Where to Buy | Dale C. Strobach</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Top Dark Section -->
+    <header class="header-dark" style="padding-bottom: 5vh;">
+        <!-- Background typography -->
+        <div class="bg-typography">
+            <p>PERSONAL ACCOUNTABILITY. SUCCESS. STORIES & LESSONS. STAGE OF LIFE.</p>
+            <p>PERSONAL ACCOUNTABILITY. SUCCESS. STORIES & LESSONS. STAGE OF LIFE.</p>
+        </div>
+
+        <nav class="nav-minimal">
+            <div class="nav-links-desktop">
+                <a href="about-the-author.html" class="nav-link">About Author</a>
+                <a href="where-to-buy.html" class="nav-link">Where to Buy</a>
+                <a href="reviews.html" class="nav-link">Reviews</a>
+            </div>
+            <!-- Mobile Hamburger -->
+            <button class="mobile-menu-btn" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+        
+        <div style="width: 100%; text-align: center; position: relative; z-index: 10; margin-top: 1rem; margin-bottom: 1rem;">
+            <h1 class="serif massive-title" style="color: var(--cream); white-space: normal;">Where to Buy</h1>
+        </div>
+
+        <!-- Marquee Line at the border -->
+        <div class="marquee-container">
+            <div class="marquee-content">
+                <span>AVAILABLE NOW &middot; AVAILABLE NOW &middot; AVAILABLE NOW &middot; AVAILABLE NOW &middot;
+                    AVAILABLE NOW &middot; AVAILABLE NOW &middot; AVAILABLE NOW &middot; AVAILABLE NOW &middot; </span>
+                <span>AVAILABLE NOW &middot; AVAILABLE NOW &middot; AVAILABLE NOW &middot; AVAILABLE NOW &middot;
+                    AVAILABLE NOW &middot; AVAILABLE NOW &middot; AVAILABLE NOW &middot; AVAILABLE NOW &middot; </span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Light Cream Section -->
+    <section class="section-cream" style="padding-top: 5rem;">
+        <div class="container-narrow" style="max-width: 1200px;">
+            <div class="text-columns" style="display: block; text-align: center; margin-bottom: 3rem;">
+                <p>Bullheaded for Success is available in hardcover, paperback, and ebook formats worldwide. Choose your preferred retailer below.</p>
+            </div>
+
+            <div class="retailer-grid">
+                <a href="#" class="retailer-btn">Amazon</a>
+                <a href="#" class="retailer-btn">Barnes & Noble</a>
+                <a href="#" class="retailer-btn">Walmart</a>
+                <a href="#" class="retailer-btn">Books-a-Million</a>
+                <a href="#" class="retailer-btn">New Book Authors</a>
+                <a href="#" class="retailer-btn">Ebay</a>
+                <a href="#" class="retailer-btn">Alibris</a>
+                <a href="#" class="retailer-btn">Powells</a>
+                <a href="#" class="retailer-btn">Booktopia</a>
+                <a href="#" class="retailer-btn">Blackwell</a>
+                <a href="#" class="retailer-btn">Liftbridge Books</a>
+                <a href="#" class="retailer-btn">Biblio</a>
+                <a href="#" class="retailer-btn">Waterstones Books</a>
+                <a href="#" class="retailer-btn">AbeBooks</a>
+                <a href="#" class="retailer-btn">ThriftBooks</a>
+                <a href="#" class="retailer-btn">Better World Books</a>
+                <a href="#" class="retailer-btn">City of Asylum Books</a>
+                <a href="#" class="retailer-btn">Prairie Lights Books</a>
+                <a href="#" class="retailer-btn">Magers and Quinn</a>
+                <a href="#" class="retailer-btn">Parnassus Books</a>
+                <a href="#" class="retailer-btn">Bookscape</a>
+                <a href="#" class="retailer-btn">Strand Books</a>
+                <a href="#" class="retailer-btn">Browns Books</a>
+                <a href="#" class="retailer-btn">Fishpond</a>
+                <a href="#" class="retailer-btn">Akademika</a>
+                <a href="#" class="retailer-btn">Foyles</a>
+                <a href="#" class="retailer-btn">Google Books</a>
+                <a href="#" class="retailer-btn">Buchfreund</a>
+                <a href="#" class="retailer-btn">Zvab.com</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container" style="text-align: center; padding: 3rem 5%; color: #333;">
+            <p style="letter-spacing: 2px; text-transform: uppercase; font-size: 0.8rem;">&copy; 2026 Dale C. Strobach. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Full Screen Mobile Menu -->
+    <div class="mobile-nav-overlay">
+        <button class="mobile-close-btn">&times;</button>
+        <div class="mobile-nav-links">
+            <a href="index.html" class="mobile-link">Home</a>
+            <a href="about-the-author.html" class="mobile-link">About Author</a>
+            <a href="where-to-buy.html" class="mobile-link">Where to Buy</a>
+            <a href="reviews.html" class="mobile-link">Reviews</a>
+        </div>
+    </div>
+
+    <script>
+        // Mobile Menu Toggle
+        document.querySelectorAll('.mobile-menu-btn, .mobile-close-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                document.querySelector('.mobile-nav-overlay').classList.toggle('active');
+                document.body.classList.toggle('menu-open');
+            });
+        });
+    </script>
+</body>
+</html>

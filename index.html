@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bullheaded for Success | Dale C. Strobach</title>
+    <meta name="description" content="Stories and lessons for any stage of life.">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Top Dark Section -->
+    <header class="header-dark">
+        <!-- Background typography -->
+        <div class="bg-typography">
+            <p>PERSONAL ACCOUNTABILITY. SUCCESS. STORIES & LESSONS. STAGE OF LIFE.</p>
+            <p>PERSONAL ACCOUNTABILITY. SUCCESS. STORIES & LESSONS. STAGE OF LIFE.</p>
+            <p>PERSONAL ACCOUNTABILITY. SUCCESS. STORIES & LESSONS. STAGE OF LIFE.</p>
+        </div>
+
+        <nav class="nav-minimal">
+            <div class="nav-links-desktop">
+                <a href="about-the-author.html" class="nav-link">About Author</a>
+                <a href="where-to-buy.html" class="nav-link">Where to Buy</a>
+                <a href="reviews.html" class="nav-link">Reviews</a>
+            </div>
+            <!-- Mobile Hamburger -->
+            <button class="mobile-menu-btn" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+
+        <div style="width: 100%; text-align: center; position: relative; z-index: 10; margin-top: 1rem; margin-bottom: 1rem;">
+            <h1 class="serif massive-title" style="color: var(--cream);">Stories and lessons for any stage of life.</h1>
+        </div>
+
+        <!-- Marquee Line at the border -->
+        <div class="marquee-container">
+            <div class="marquee-content">
+                <span>AVAILABLE NOW &middot; AVAILABLE NOW &middot; AVAILABLE NOW &middot; AVAILABLE NOW &middot;
+                    AVAILABLE NOW &middot; AVAILABLE NOW &middot; AVAILABLE NOW &middot; AVAILABLE NOW &middot; </span>
+                <span>AVAILABLE NOW &middot; AVAILABLE NOW &middot; AVAILABLE NOW &middot; AVAILABLE NOW &middot;
+                    AVAILABLE NOW &middot; AVAILABLE NOW &middot; AVAILABLE NOW &middot; AVAILABLE NOW &middot; </span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Light Cream Section -->
+    <section class="section-cream" id="book">
+        <div class="hero-center-group">
+            <img src="assets/hero-book.png" alt="Bullheaded for Success" class="book-hero">
+            <a href="#buy" class="btn-dark order-hero-btn">ORDER NOW</a>
+        </div>
+
+        <div class="container-narrow">
+            <div class="text-columns">
+                <div class="col">
+                    <p>This book is not written for the “If only Ida’s” of the world. You know the type. “If only Ida
+                        done this or if only Ida done that, my life would have been so much better.”</p>
+                    <p>This book is written to help those that are ready and willing to create their own successes now,
+                        rather than waiting until it’s too late.</p>
+                </div>
+                <div class="col">
+                    <p>Having spent my younger years working within family-run businesses, I’ve acquired many important
+                        personality traits over the course of my life (sometimes the hard way) such as honesty,
+                        commitment, respect, empathy, and personal accountability.</p>
+                    <p>This book is a living writing. Lessons that meant nothing the first time through will leap off
+                        the pages at other times in your life.</p>
+                </div>
+            </div>
+
+            <div class="button-wrapper">
+                <a href="#buy" class="btn-dark">ORDER BOOK</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dark Lower Section -->
+    <section class="section-dark-lower" id="about">
+        <div class="container-narrow">
+            <h2 class="serif quote-title">"I was born a long time ago in North Central WI at a very young age. The most
+                important thing is a willingness to serve others."</h2>
+            <p class="quote-author">- Dale C. Strobach</p>
+        </div>
+
+        <div class="reviews-container" id="reviews">
+            <div class="review-item">
+                <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                <p>"A masterclass in personal accountability. I couldn't put it down."</p>
+            </div>
+            <div class="review-item">
+                <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                <p>"Incredibly inspiring. Practical lessons for every single stage of life."</p>
+            </div>
+            <div class="review-item">
+                <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                <p>"Honest, raw, and deeply impactful. A masterpiece of storytelling."</p>
+            </div>
+        </div>
+
+        <div class="retailer-list" id="buy">
+            <a href="#" class="retailer-link">Amazon</a>
+            <a href="#" class="retailer-link">Barnes & Noble</a>
+            <a href="#" class="retailer-link">Walmart</a>
+            <a href="#" class="retailer-link">Ebay</a>
+        </div>
+    </section>
+
+    <!-- Full Screen Mobile Menu -->
+    <div class="mobile-nav-overlay">
+        <button class="mobile-close-btn">&times;</button>
+        <div class="mobile-nav-links">
+            <a href="index.html" class="mobile-link">Home</a>
+            <a href="about-the-author.html" class="mobile-link">About Author</a>
+            <a href="where-to-buy.html" class="mobile-link">Where to Buy</a>
+            <a href="reviews.html" class="mobile-link">Reviews</a>
+        </div>
+    </div>
+
+    <script>
+        // Mobile Menu Toggle
+        document.querySelectorAll('.mobile-menu-btn, .mobile-close-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                document.querySelector('.mobile-nav-overlay').classList.toggle('active');
+                document.body.classList.toggle('menu-open');
+            });
+        });
+    </script>
+</body>
+
+</html>

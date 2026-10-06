@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About the Author | Dale C. Strobach</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Top Dark Section -->
+    <header class="header-dark" style="padding-bottom: 5vh;">
+        <!-- Background typography -->
+        <div class="bg-typography">
+            <p>PERSONAL ACCOUNTABILITY. SUCCESS. STORIES & LESSONS. STAGE OF LIFE.</p>
+            <p>PERSONAL ACCOUNTABILITY. SUCCESS. STORIES & LESSONS. STAGE OF LIFE.</p>
+        </div>
+
+        <nav class="nav-minimal">
+            <div class="nav-links-desktop">
+                <a href="about-the-author.html" class="nav-link">About Author</a>
+                <a href="where-to-buy.html" class="nav-link">Where to Buy</a>
+                <a href="reviews.html" class="nav-link">Reviews</a>
+            </div>
+            <!-- Mobile Hamburger -->
+            <button class="mobile-menu-btn" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+        
+        <div style="width: 100%; text-align: center; position: relative; z-index: 10; margin-top: 1rem; margin-bottom: 1rem;">
+            <h1 class="serif massive-title" style="color: var(--cream); white-space: normal;">About the Author</h1>
+        </div>
+
+    </header>
+
+    <!-- Light Cream Section -->
+    <section class="section-cream" style="padding-top: 5rem;">
+        <div class="container-narrow" style="max-width: 1000px;">
+            <div class="author-split">
+                <!-- Left Side: Image + Name -->
+                <div class="author-left">
+                    <img src="assets/about.jpeg" alt="Dale C. Strobach" class="author-img">
+                    <h3 class="serif author-name-caption">Dale C. Strobach</h3>
+                </div>
+                
+                <!-- Right Side: Copy -->
+                <div class="author-right">
+                    <p class="lead"><span class="dropcap">I</span> was born a long time ago in North Central WI at a very young age.</p>
+                    <p>Having spent my younger years working within family-run businesses including a dairy farm and a few smaller grocery stores, I’m no stranger to a strong work ethic, and have carried it into other professions over the years.</p>
+                    <p>I’ve acquired many other important personality traits over the course of my life (sometimes the hard way) such as honesty, commitment, respect, empathy, and personal accountability.</p>
+                    
+                    <div class="author-quote">
+                        "But the most important thing (and the reason for this book existing) is a willingness to serve others."
+                    </div>
+                    
+                    <p>The goal of this writing is to help you advance toward your own success. If even one topic helps you to do that, the book’s original intent has been met.</p>
+                    <p>You can find me in West Central WI keeping it real with my gorgeous wife who has stood by my side for 38+ years, my two enterprising sons, and a few muscle cars in my garage.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container" style="text-align: center; padding: 3rem 5%; color: #333;">
+            <p style="letter-spacing: 2px; text-transform: uppercase; font-size: 0.8rem;">&copy; 2026 Dale C. Strobach. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Full Screen Mobile Menu -->
+    <div class="mobile-nav-overlay">
+        <button class="mobile-close-btn">&times;</button>
+        <div class="mobile-nav-links">
+            <a href="index.html" class="mobile-link">Home</a>
+            <a href="about-the-author.html" class="mobile-link">About Author</a>
+            <a href="where-to-buy.html" class="mobile-link">Where to Buy</a>
+            <a href="reviews.html" class="mobile-link">Reviews</a>
+        </div>
+    </div>
+
+    <script>
+        // Mobile Menu Toggle
+        document.querySelectorAll('.mobile-menu-btn, .mobile-close-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                document.querySelector('.mobile-nav-overlay').classList.toggle('active');
+                document.body.classList.toggle('menu-open');
+            });
+        });
+    </script>
+</body>
+</html>

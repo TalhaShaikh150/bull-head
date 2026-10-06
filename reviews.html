@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reviews | Dale C. Strobach</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header-dark" style="padding-bottom: 5vh;">
+        <div class="bg-typography">
+            <p>PERSONAL ACCOUNTABILITY. SUCCESS. STORIES & LESSONS. STAGE OF LIFE.</p>
+            <p>PERSONAL ACCOUNTABILITY. SUCCESS. STORIES & LESSONS. STAGE OF LIFE.</p>
+        </div>
+
+        <nav class="nav-minimal">
+            <div class="nav-links-desktop">
+                <a href="about-the-author.html" class="nav-link">About Author</a>
+                <a href="where-to-buy.html" class="nav-link">Where to Buy</a>
+                <a href="reviews.html" class="nav-link">Reviews</a>
+            </div>
+            <!-- Mobile Hamburger -->
+            <button class="mobile-menu-btn" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+        
+        <div style="width: 100%; text-align: center; position: relative; z-index: 10; margin-top: 1rem; margin-bottom: 1rem;">
+            <h1 class="serif massive-title" style="color: var(--cream); white-space: normal;">Reviews</h1>
+        </div>
+    </header>
+
+    <section class="section-cream" style="padding-top: 5rem; min-height: 60vh;">
+        <div class="container-narrow" style="max-width: 900px;">
+            <div class="review-feature">
+                <div class="stars">★★★★★</div>
+                <h3 class="serif review-author">Reviewed by Asher Syed for Readers’ Favorite</h3>
+                <div class="review-body">
+                    <p>In Bullheaded for Success, Dale Strobach looks back on the stubbornness that once caused mistakes and explains how faith gave that same determination direction. A turning point during a college trip to Europe changed the way he understood God’s guidance, leaving him to reconsider what success required from him. The memoir follows that change as Strobach learns to accept responsibility for his decisions and use experience as instruction for the future. Each lesson returns to the same belief: a better life begins when a person stops waiting for circumstances to improve and chooses conduct that supports the future being sought. By sharing what he learned after getting things wrong, Strobach offers readers a route toward a life governed by faith and personal accountability.</p>
+                    <p>In Bullheaded for Success, Dale Strobach offers an approachable self-help guide shaped by candid recollection and easy humor. His short chapters carry one lesson at a time, so readers can follow his reasoning and put it to use. He makes the five-second countdown for procrastination instantly usable: count backward, then begin the task as soon as the count ends. Strobach’s voice feels like advice shared across a kitchen table, with jokes that make it all feel really fun and welcoming for newcomers. Strobach uses brief but helpful headings to make particular lessons easy to revisit, but it is his gratitude journal prompts at the end that I liked most, turning the lesson into a daily record of progress. Overall, Strobach offers a useful resource for readers who need practical help turning belief into daily conduct, and are, maybe, a little bullheaded to boot.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container" style="text-align: center; padding: 3rem 5%; color: #333;">
+            <p style="letter-spacing: 2px; text-transform: uppercase; font-size: 0.8rem;">&copy; 2026 Dale C. Strobach. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Full Screen Mobile Menu -->
+    <div class="mobile-nav-overlay">
+        <button class="mobile-close-btn">&times;</button>
+        <div class="mobile-nav-links">
+            <a href="index.html" class="mobile-link">Home</a>
+            <a href="about-the-author.html" class="mobile-link">About Author</a>
+            <a href="where-to-buy.html" class="mobile-link">Where to Buy</a>
+            <a href="reviews.html" class="mobile-link">Reviews</a>
+        </div>
+    </div>
+
+    <script>
+        // Mobile Menu Toggle
+        document.querySelectorAll('.mobile-menu-btn, .mobile-close-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                document.querySelector('.mobile-nav-overlay').classList.toggle('active');
+                document.body.classList.toggle('menu-open');
+            });
+        });
+    </script>
+</body>
+</html>
