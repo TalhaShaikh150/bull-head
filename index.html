@@ -12,15 +12,11 @@
 <body>
     <!-- Top Dark Section -->
     <header class="header-dark home-header" style="min-height: 55vh; display: flex; flex-direction: column;">
-        <!-- Background typography -->
-        <div class="bg-typography">
-            <p>PERSONAL ACCOUNTABILITY. SUCCESS. STORIES & LESSONS. STAGE OF LIFE.</p>
-            <p>PERSONAL ACCOUNTABILITY. SUCCESS. STORIES & LESSONS. STAGE OF LIFE.</p>
-            <p>PERSONAL ACCOUNTABILITY. SUCCESS. STORIES & LESSONS. STAGE OF LIFE.</p>
-        </div>
+
 
         <nav class="nav-minimal">
             <div class="nav-links-desktop">
+                <a href="index.html" class="nav-link">Home</a>
                 <a href="about-the-author.html" class="nav-link">About Author</a>
                 <a href="where-to-buy.html" class="nav-link">Where to Buy</a>
                 <a href="reviews.html" class="nav-link">Reviews</a>
@@ -65,8 +61,10 @@
         <div class="container-narrow">
             <div class="text-columns">
                 <div class="col">
-                    <p>This book is not written for the “If only Ida’s” of the world. You know the type. “If only Ida
-                        done this or if only Ida done that, my life would have been so much better.”</p>
+                    <div class="author-quote">
+                        "This book is not written for the “If only Ida’s” of the world."
+                    </div>
+                    <p>You know the type. “If only Ida done this or if only Ida done that, my life would have been so much better.”</p>
                     <p>This book is written to help those that are ready and willing to create their own successes now,
                         rather than waiting until it’s too late.</p>
                 </div>
@@ -79,7 +77,7 @@
                 </div>
             </div>
 
-            <div class="button-wrapper">
+            <div class="button-wrapper" style="margin-top: -2rem; margin-bottom: -4rem;">
                 <a href="#buy" class="btn-dark">ORDER BOOK</a>
             </div>
         </div>
@@ -88,23 +86,31 @@
     <!-- Dark Lower Section -->
     <section class="section-dark-lower" id="about">
         <div class="container-narrow">
-            <h2 class="serif quote-title">"I was born a long time ago in North Central WI at a very young age. The most
-                important thing is a willingness to serve others."</h2>
+            <h2 class="serif quote-title">"I was born a long time ago in North Central WI at a very young age. The goal of this writing is to help you advance toward your own success. If even one topic helps you to do that, the book’s original intent has been met."</h2>
             <p class="quote-author">- Dale C. Strobach</p>
+        </div>
+
+        <div class="container-narrow" style="text-align: center; margin-bottom: 3rem;">
+            <h3 style="color: var(--terracotta); font-size: 1.5rem; letter-spacing: 4px; margin-bottom: 0.5rem;">&#9733;&#9733;&#9733;&#9733;&#9733;</h3>
+            <p style="color: var(--cream); font-family: 'Playfair Display', serif; font-style: italic; font-size: 1.5rem;">"Highly Recommended" — Readers' Favorite</p>
         </div>
 
         <div class="reviews-container" id="reviews">
             <div class="review-item">
                 <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-                <p>"A masterclass in personal accountability. I couldn't put it down."</p>
+                <p>"An engaging, practical self-help guide that empowers you to face life's challenges head-on... I found it very illuminating and informative, and highly recommend it."<br><span style="display: block; margin-top: 1rem; color: rgba(255,255,255,0.5); font-style: normal; font-family: 'Roboto', sans-serif; font-size: 0.9rem;">— Pikasho Deka, Readers' Favorite</span></p>
             </div>
             <div class="review-item">
                 <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-                <p>"Incredibly inspiring. Practical lessons for every single stage of life."</p>
+                <p>"An eye-opening, easy-to-read guide that blends self-improvement with community reform in a way that really gets you motivated to create change."<br><span style="display: block; margin-top: 1rem; color: rgba(255,255,255,0.5); font-style: normal; font-family: 'Roboto', sans-serif; font-size: 0.9rem;">— Makeda Cummings, Readers' Favorite</span></p>
             </div>
             <div class="review-item">
                 <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-                <p>"Honest, raw, and deeply impactful. A masterpiece of storytelling."</p>
+                <p>"Strobach's voice feels like advice shared across a kitchen table, with jokes that make it all feel really fun and welcoming for newcomers... a useful resource for readers who need practical help turning belief into daily conduct."<br><span style="display: block; margin-top: 1rem; color: rgba(255,255,255,0.5); font-style: normal; font-family: 'Roboto', sans-serif; font-size: 0.9rem;">— Asher Syed, Readers' Favorite</span></p>
+            </div>
+            <div class="review-item">
+                <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                <p>"Written with a distinct, folksy charm, it feels like sitting across the kitchen table from a trusted friend who's sharing stories straight from the heart... Remarkably refreshing how straightforward he is about his Christian beliefs, weaving his faith openly into his journey without hesitation."<br><span style="display: block; margin-top: 1rem; color: rgba(255,255,255,0.5); font-style: normal; font-family: 'Roboto', sans-serif; font-size: 0.9rem;">— J. Scott, author of The Afterlight</span></p>
             </div>
         </div>
 
@@ -120,7 +126,7 @@
     <footer style="background-color: var(--dark-burgundy);">
         <div class="container" style="text-align: center; padding: 3rem 5%; color: #ffffff;">
             <p style="letter-spacing: 2px; text-transform: uppercase; font-size: 0.8rem;">&copy; 2026 Dale C. Strobach. All rights reserved.</p>
-            <p style="letter-spacing: 2px; text-transform: uppercase; font-size: 0.7rem; color: rgba(255,255,255,0.6); margin-top: 1rem;">Powered by AK Enterprises</p>
+            <p style="letter-spacing: 2px; text-transform: uppercase; font-size: 0.7rem; color: rgba(255,255,255,0.6); margin-top: 1rem;">Powered by <a href="https://akenterprises.io/" target="_blank" rel="noopener noreferrer" style="color: rgba(255,255,255,0.8); text-decoration: none; border-bottom: 1px solid rgba(255,255,255,0.4);">AK Enterprises</a></p>
         </div>
     </footer>
 

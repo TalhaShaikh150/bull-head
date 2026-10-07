@@ -228,7 +228,7 @@ h1, h2, h3, .serif {
 
 .reviews-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 4rem;
     max-width: 1200px;
     margin: 0 auto 5rem;
@@ -278,7 +278,7 @@ h1, h2, h3, .serif {
     }
 
     .nav-links-desktop {
-        display: flex !important; 
+        display: flex !important; /* Force desktop links to show on mobile */
         flex-wrap: nowrap; 
         justify-content: space-evenly; /* Distribute perfectly across the screen */
         width: 100%;
@@ -292,6 +292,7 @@ h1, h2, h3, .serif {
         white-space: nowrap; 
         font-weight: 700; 
         padding: 0.5rem 0; /* Vertical padding only for hit area, no horizontal waste */
+        color: var(--cream);
     }
 
     .mobile-menu-btn {
@@ -430,7 +431,8 @@ h1, h2, h3, .serif {
     float: left;
     font-size: 4.5rem;
     line-height: 0.8;
-    padding-right: 0.5rem;
+    padding-right: 0.1rem;
+    margin-right: -0.1rem; /* Pull text even closer for thin characters like I */
     color: var(--terracotta);
     font-family: 'Playfair Display', serif;
     font-weight: 700;
@@ -445,6 +447,10 @@ h1, h2, h3, .serif {
     border-left: 4px solid var(--terracotta);
     margin: 3rem 0;
     font-style: italic;
+}
+
+.author-quote:first-child {
+    margin-top: 0;
 }
 
 @media (max-width: 768px) {
