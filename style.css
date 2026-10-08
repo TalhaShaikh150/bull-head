@@ -62,12 +62,18 @@ h1, h2, h3, .serif {
 .nav-minimal {
     display: flex;
     justify-content: center;
-    gap: 2.5rem;
+    gap: 4rem; /* Gap between logo and links */
     align-items: center;
     padding: 2rem 5%;
     position: relative;
     z-index: 10;
     background-color: #ffffff;
+}
+
+.nav-links-desktop {
+    display: flex;
+    gap: 2.5rem;
+    align-items: center;
 }
 
 .nav-link {
@@ -82,6 +88,12 @@ h1, h2, h3, .serif {
 
 .nav-link:hover {
     color: var(--terracotta);
+}
+
+.nav-link.active, .mobile-link.active {
+    color: var(--terracotta);
+    border-bottom: 2px solid var(--terracotta);
+    padding-bottom: 4px;
 }
 
 .logo-center {
@@ -267,23 +279,29 @@ h1, h2, h3, .serif {
         display: flex !important;
     }
 
+    .book-hero {
+        height: 30vh; /* Scale down book to ensure headline fits above fold */
+        max-height: 240px;
+    }
+
     .bg-typography {
         display: none !important; /* Hide massive background text on mobile */
     }
 
     .nav-minimal {
-        justify-content: center;
-        padding: 1.5rem 2%; /* Reduced side padding to give text maximum horizontal room */
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0.5rem 5%;
         box-shadow: 0 4px 20px rgba(0,0,0,0.1); 
     }
 
+    .nav-logo-link img {
+        height: 55px !important;
+        width: 48px !important;
+    }
+
     .nav-links-desktop {
-        display: flex !important; /* Force desktop links to show on mobile */
-        flex-wrap: nowrap; 
-        justify-content: space-evenly; /* Distribute perfectly across the screen */
-        width: 100%;
-        max-width: 100%;
-        gap: 0; /* Remove fixed gap, let space-evenly handle it */
+        display: none !important;
     }
 
     .nav-link {
@@ -296,7 +314,7 @@ h1, h2, h3, .serif {
     }
 
     .mobile-menu-btn {
-        display: none !important; /* Completely hide hamburger menu */
+        display: flex !important;
     }
 
     .massive-title {
@@ -313,8 +331,9 @@ h1, h2, h3, .serif {
     }
 
     .home-header {
-        min-height: 100vh !important; /* Force to take up entire screen only on home page */
-        padding-bottom: 0 !important;
+        height: 100svh !important; /* Use small viewport height to ignore address bar */
+        min-height: 100svh !important; 
+        padding-bottom: 40px !important; /* Leave room for marquee */
     }
 
     .review-container-mobile {

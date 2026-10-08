@@ -15,8 +15,11 @@
 
 
         <nav class="nav-minimal">
+            <a href="index.html" class="nav-logo-link" style="display: flex; align-items: center;">
+                <img src="assets/logo.jpeg" alt="Bullheaded for Success" style="height: 80px; width: 70px; border-radius: 4px;">
+            </a>
             <div class="nav-links-desktop">
-                <a href="index.html" class="nav-link">Home</a>
+                <a href="index.html" class="nav-link active">Home</a>
                 <a href="about-the-author.html" class="nav-link">About Author</a>
                 <a href="where-to-buy.html" class="nav-link">Where to Buy</a>
                 <a href="reviews.html" class="nav-link">Reviews</a>
@@ -34,10 +37,10 @@
         </div>
 
         <!-- MOBILE ONLY HERO (Book -> Button -> Title) -->
-        <div class="mobile-only-hero" style="display: none; flex-direction: column; align-items: center; justify-content: center; width: 100%; text-align: center; position: relative; z-index: 10; padding: 1rem 5%; gap: 1rem;">
+        <div class="mobile-only-hero" style="display: none; flex: 1; flex-direction: column; align-items: center; justify-content: center; width: 100%; text-align: center; position: relative; z-index: 10; padding: 1rem 5%; gap: 1.5rem;">
+            <h1 class="serif massive-title" style="color: var(--cream); margin-top: 0;">Stories and lessons for any stage of life.</h1>
             <img src="assets/hero-book.png" alt="Bullheaded for Success" class="book-hero">
-            <a href="#buy" class="btn-cream order-hero-btn">ORDER NOW</a>
-            <h1 class="serif massive-title" style="color: var(--cream); margin-top: 0.5rem;">Stories and lessons for any stage of life.</h1>
+            <a href="where-to-buy.html" class="btn-cream order-hero-btn">ORDER NOW</a>
         </div>
 
         <!-- Marquee Line at the border -->
@@ -55,7 +58,7 @@
     <section class="section-cream" id="book">
         <div class="hero-center-group desktop-only-hero">
             <img src="assets/hero-book.png" alt="Bullheaded for Success" class="book-hero">
-            <a href="#buy" class="btn-dark order-hero-btn">ORDER NOW</a>
+            <a href="where-to-buy.html" class="btn-dark order-hero-btn">ORDER NOW</a>
         </div>
 
         <div class="container-narrow">
@@ -115,10 +118,10 @@
         </div>
 
         <div class="retailer-list" id="buy">
-            <a href="#" class="retailer-link">Amazon</a>
-            <a href="#" class="retailer-link">Barnes & Noble</a>
-            <a href="#" class="retailer-link">Walmart</a>
-            <a href="#" class="retailer-link">Ebay</a>
+            <a href="http://amazon.com/Bullheaded-Success-Dale-C-Strobach/dp/B0H7W7FMQ6" target="_blank" rel="noopener noreferrer" class="retailer-link">Amazon</a>
+            <a href="https://www.barnesandnoble.com/w/bullheaded-for-success-dale-c-strobach/1150587301?ean=9798256119720" target="_blank" rel="noopener noreferrer" class="retailer-link">Barnes & Noble</a>
+            <a href="https://www.walmart.com/ip/Bullheaded-for-Success-Paperback-9798256119720/20572312173?classType=REGULAR&from=/search" target="_blank" rel="noopener noreferrer" class="retailer-link">Walmart</a>
+            <a href="https://www.ebay.com/itm/820186883808?_skw=bullhead+for+sucess+book&itmmeta=01M4BJV0ZYEE6VVGPD3WFK5112&hash=itembef6f2a6e0:g:ALUAAeSwCbFqxmY8&itmprp=enc%3AAQALAAAA8GfYFPkwiKCW4ZNSs2u11xDItzX%2B%2FpgQ3FwLqy8RSFHbAcjXYJsr%2Bma51KmoMkEOFpv6srusuGE%2BNx1XLDPhF2Rbat34sjQV1GXSd6PfpgaiPk3PkO%2FHqrv1%2FFjn9Fyb3%2FpwnupM%2BEfRUzm2Pd0IzUMXTNsUcMbyUpKwRrvc7OHJu9%2BqEm%2F5GD45FQTsf%2Ba9wr2a%2BBwjXPtl9Mc1ajMddMoSmqQKP7F7t8LKmNSRqsqwFaL%2FwzcVbG%2B1vVJMI8h%2Bt4HRIRq10oNv6KSDANGbXiKUptohXaj7FwnJhNDEz6XpsAuAZkHgY7mCn0sMp%2BSovA%3D%3D%7Ctkp%3ABFBMtpDs8qJo" target="_blank" rel="noopener noreferrer" class="retailer-link">Ebay</a>
         </div>
     </section>
 
@@ -126,6 +129,7 @@
     <footer style="background-color: var(--dark-burgundy);">
         <div class="container" style="text-align: center; padding: 3rem 5%; color: #ffffff;">
             <p style="letter-spacing: 2px; text-transform: uppercase; font-size: 0.8rem;">&copy; 2026 Dale C. Strobach. All rights reserved.</p>
+            <p style="font-size: 0.8rem; margin-top: 0.5rem;"><a href="terms-and-conditions.html" style="color: rgba(255,255,255,0.8); text-decoration: none; border-bottom: 1px solid rgba(255,255,255,0.4);">Terms and Conditions</a> &nbsp;|&nbsp; <a href="privacy-policy.html" style="color: rgba(255,255,255,0.8); text-decoration: none; border-bottom: 1px solid rgba(255,255,255,0.4);">Privacy Policy</a></p>
             <p style="letter-spacing: 2px; text-transform: uppercase; font-size: 0.7rem; color: rgba(255,255,255,0.6); margin-top: 1rem;">Powered by <a href="https://akenterprises.io/" target="_blank" rel="noopener noreferrer" style="color: rgba(255,255,255,0.8); text-decoration: none; border-bottom: 1px solid rgba(255,255,255,0.4);">AK Enterprises</a></p>
         </div>
     </footer>
@@ -134,7 +138,7 @@
     <div class="mobile-nav-overlay">
         <button class="mobile-close-btn">&times;</button>
         <div class="mobile-nav-links">
-            <a href="index.html" class="mobile-link">Home</a>
+            <a href="index.html" class="mobile-link active">Home</a>
             <a href="about-the-author.html" class="mobile-link">About Author</a>
             <a href="where-to-buy.html" class="mobile-link">Where to Buy</a>
             <a href="reviews.html" class="mobile-link">Reviews</a>
