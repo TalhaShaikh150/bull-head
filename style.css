@@ -90,7 +90,13 @@ h1, h2, h3, .serif {
     color: var(--terracotta);
 }
 
-.nav-link.active, .mobile-link.active {
+.nav-link.active {
+    color: var(--dark-burgundy);
+    border-bottom: 2px solid var(--dark-burgundy);
+    padding-bottom: 4px;
+}
+
+.mobile-link.active {
     color: var(--terracotta);
     border-bottom: 2px solid var(--terracotta);
     padding-bottom: 4px;
