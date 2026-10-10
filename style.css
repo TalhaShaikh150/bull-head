@@ -593,6 +593,7 @@ h1, h2, h3, .serif {
     .bg-typography { font-size: 3rem; }
     .section-cream { padding-top: 2rem; }
     .logo-center { font-size: 2rem; }
+    .quote-title { font-size: 1.5rem; line-height: 1.4; }
 }
 
 /* SLEEK FULL SCREEN MOBILE NAVBAR */
